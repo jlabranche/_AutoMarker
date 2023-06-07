@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: AutoMarker |cff7fff7fVanilla-WoW|r
+## Notes: HoverMarks
+## Author: Hobbit
+
+##
+AutoMarker.lua
