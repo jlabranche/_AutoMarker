@@ -2,6 +2,8 @@
 ## Title: AutoMarker |cff7fff7fVanilla-WoW|r
 ## Notes: HoverMarks
 ## Author: Hobbit
+## SavedVariablesPerCharacter: AUTOMARKER_SETTINGS, AUTOMARKER_ONE, AUTOMARKER_TWO, AUTOMARKER_THREE, AUTOMARKER_FOUR, AUTOMARKER_FIVE, AUTOMARKER_SIX, AUTOMARKER_SEVEN, AUTOMARKER_EIGHT
 
 ##
+NPCList.lua
 AutoMarker.lua
