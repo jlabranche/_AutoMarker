@@ -6,5 +6,9 @@
 
 ##
 NPCList.lua
+Components\Button.lua
+Components\TitleBox.lua
+Components\Dialog.lua
 Components\DropdownSelect.lua
+AutoMarkerSettings.lua
 AutoMarker.lua
