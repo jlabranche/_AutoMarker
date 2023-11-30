@@ -19,7 +19,7 @@ AutoMarker_Component_Dialog = function(padding)
 
 	local btnCloseBottom = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
 	btnCloseBottom:SetWidth(70)
-	btnCloseBottom:SetHeight(QUIVER.Size.Button)
+	btnCloseBottom:SetHeight(AUTOMARKER.Size.Button)
 	btnCloseBottom:SetPoint("BottomRight", f, "BottomRight", -padding, padding)
 	btnCloseBottom:SetText("Close")
 	btnCloseBottom:SetScript("OnClick", function() f:Hide() end)

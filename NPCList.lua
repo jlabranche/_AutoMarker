@@ -163,3 +163,15 @@ npcsToMark["Naxxramas"]["Plague Slime"]           = {3,4};
 npcsToMark["Naxxramas"]["Stoneskin Gargoyle"]     = {8,7};
 npcsToMark["Naxxramas"]["Stitched Spewer"]        = {8,7,6};
 
+function tableKeys(table)
+    local keys = {}
+    local i = 1
+    for key, _ in pairs(table) do
+        keys[i] = key
+        i = i + 1
+    end
+    return keys
+end
+
+npcsToMarkZone = tableKeys(npcsToMark);
+
