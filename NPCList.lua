@@ -9,8 +9,15 @@
 npcsToMark = {};
 -- /script print(GetRealZoneText())
 
+-- Emerald Sanctum
+npcsToMark["Emerald Sanctum"] = {}
+npcsToMark["Emerald Sanctum"]["Sanctum Supressor"] = {8}
+npcsToMark["Emerald Sanctum"]["Sanctum Scalebane"] = {6, 5}
+npcsToMark["Emerald Sanctum"]["Sanctum Wyrmkin"] = {7}
+
 -- ZG
 -- Panther Boss Area
+
 npcsToMark["Zul'Gurub"] = {};
 npcsToMark["Zul'Gurub"]["Hakkari Shadow Hunter"] = {8, 7, 6, 5};
 npcsToMark["Zul'Gurub"]["Gurubashi Blood Drinker"] = {6, 5, 4, 3};

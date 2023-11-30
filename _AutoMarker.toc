@@ -6,4 +6,5 @@
 
 ##
 NPCList.lua
+Components\DropdownSelect.lua
 AutoMarker.lua
