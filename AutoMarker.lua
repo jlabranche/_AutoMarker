@@ -6,6 +6,7 @@ local autoMarkerFrame = CreateFrame("Frame")
 local marksUsed = {0, 0, 0, 0, 0, 0, 0, 0};
 -- Register the events
 autoMarkerFrame:RegisterEvent("UPDATE_MOUSEOVER_UNIT")
+autoMarkerFrame:RegisterEvent("ADDON_LOADED")
 
 -- Function to handle mouseover event
 local function OnMouseover()
@@ -19,8 +20,8 @@ local function OnMouseover()
                     local maxHealth = UnitHealthMax("mouseover")
                     local healthPercentage = (currentHealth / maxHealth) * 100
                     if (healthPercentage > 0) then
-                        if (npcsToMark[GetRealZoneText()]) then
-                            markerArray = npcsToMark[GetRealZoneText()][targetName];
+                        if (npcsToMarkSaved[GetRealZoneText()]) then
+                            markerArray = npcsToMarkSaved[GetRealZoneText()][targetName];
                             if markerArray then
                                 for index, value in ipairs(markerArray) do
                                     if (marksUsed[value] and (marksUsed[value] == 0 or GetTime()-marksUsed[value] > 4)) then
@@ -43,6 +44,10 @@ end
 
 -- Set up event handler
 autoMarkerFrame:SetScript("OnEvent", function()
+    if event == "ADDON_LOADED" and arg1 == "_AutoMarker" then
+        print("Loaded "..arg1)
+        npcsToMark = npcsToMarkSaved or npcsToMark
+    end
     if event == "UPDATE_MOUSEOVER_UNIT" then
         OnMouseover()
     end

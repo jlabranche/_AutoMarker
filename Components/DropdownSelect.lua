@@ -105,7 +105,6 @@ AutoMarker_Component_DropdownSelect = function(parent, label, optionsText, selec
             option:SetBackdrop({ bgFile = "Interface/BUTTONS/WHITE8X8" })
             option:SetBackdropColor(0, 0, 0, 0)
             table.insert(f.ExistingMenus, option)
-            print(t);
             return option
         end)
         for _k,oLoop in f.Menu.Options do
@@ -143,7 +142,7 @@ AutoMarker_Component_DropdownSelect = function(parent, label, optionsText, selec
         f.Button:SetScript("OnEnter", hoverStart)
         f.Button:SetScript("OnLeave", hoverEnd)
 
-        f:SetHeight(f.Selected:GetHeight() + SPACING + f.Label:GetHeight() + 2 * INSET)
+        f:SetHeight(f.Selected:GetHeight() + SPACING + f.Label:GetHeight() + 6 * INSET)
         f:SetWidth(maxWidth + f.Button:GetWidth() + SPACING + INSET * 2)
 
         f.Menu:SetHeight(Sum(heights) + 2 * BORDER)

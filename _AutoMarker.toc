@@ -1,10 +1,12 @@
 ## Interface: 11200
 ## Title: AutoMarker |cff7fff7fVanilla-WoW|r
 ## Notes: HoverMarks
-## Author: Hobbit
-## SavedVariablesPerCharacter: AUTOMARKER_SETTINGS, AUTOMARKER_ONE, AUTOMARKER_TWO, AUTOMARKER_THREE, AUTOMARKER_FOUR, AUTOMARKER_FIVE, AUTOMARKER_SIX, AUTOMARKER_SEVEN, AUTOMARKER_EIGHT
-
+## Author: Hobbitt
+## Version: 1.13
+## SavedVariablesPerCharacter: AUTOMARKER_SETTINGS, npcsToMarkSaved
+## Credits: Thanks Dokka for help with some UI help
 ##
+
 NPCList.lua
 Components\Button.lua
 Components\TitleBox.lua

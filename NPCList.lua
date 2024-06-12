@@ -55,9 +55,7 @@ npcsToMark["Zul'Gurub"]["High Priest Thekal"] = {5};
 npcsToMark["Zul'Gurub"]["Hakkari Blood Priest"] = {6, 5};
 npcsToMark["Zul'Gurub"]["Soulflayer"] = {4, 3};
 
-npcsToMark["Eastern Plaguelands"] = {};
 npcsToMark["Stormwind City"] = {};
-npcsToMark["Eastern Plaguelands"]["Carrion Grub"] = {8,7,6};
 npcsToMark["Stormwind City"]["Stormwind City Guard"] = {8,7,6};
 --MC
 npcsToMark["Molten Core"] = {}
@@ -139,7 +137,7 @@ npcsToMark["Naxxramas"]["Living Monstrosity"]     = {8};
 npcsToMark["Naxxramas"]["Mad Scientist"]          = {7,6,5,4,3};
 --military wing
 npcsToMark["Naxxramas"]["Deathknight"]            = {8,7};
-npcsToMark["Naxxramas"]["Risen Deathknight"]      = {7,6};
+npcsToMark["Naxxramas"]["Risen Deathknight"]      = {6,5,4,3};
 npcsToMark["Naxxramas"]["Deathknight Captain"]    = {5,4};
 npcsToMark["Naxxramas"]["Shade of Naxxramas"]     = {8,7};
 npcsToMark["Naxxramas"]["Necro Knight"]           = {7,6,5};
