@@ -20,6 +20,9 @@ local function OnMouseover()
                     local maxHealth = UnitHealthMax("mouseover")
                     local healthPercentage = (currentHealth / maxHealth) * 100
                     if (healthPercentage > 0) then
+                        if (npcsToMarkSaved == nil) then
+                            npcsToMarkSaved = npcsToMark
+                        end
                         if (npcsToMarkSaved[GetRealZoneText()]) then
                             markerArray = npcsToMarkSaved[GetRealZoneText()][targetName];
                             if markerArray then
